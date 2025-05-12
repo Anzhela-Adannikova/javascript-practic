@@ -10,24 +10,24 @@
 // Використайте цикл for для перебору елементів масиву.
 // Нумерація елементів повинна починатися з 1 (а не з 0).
 
-const styles = ['jazz', 'blues'];
-styles.push('rock-n-roll');
+// const styles = ['jazz', 'blues'];
+// styles.push('rock-n-roll');
 
-const index = styles.indexOf('blues'); 
-if (index !== -1) { 
-    styles[index] = 'classic';
-}
+// const index = styles.indexOf('blues'); 
+// if (index !== -1) { 
+//     styles[index] = 'classic';
+// }
 
-console.log(styles);
+// console.log(styles);
 
 
-function logItems(array) {
-    for(let i = 0; i < array.length; i++) {
-                console.log(`${i + 1} - ${array[i]}`);
-    }
-}
+// function logItems(array) {
+//     for(let i = 0; i < array.length; i++) {
+//                 console.log(`${i + 1} - ${array[i]}`);
+//     }
+// }
 
-console.log(logItems([2, 5, 7]));
+// console.log(logItems([2, 5, 7]));
 
 
 
@@ -42,18 +42,18 @@ console.log(logItems([2, 5, 7]));
 
 // const logins = ["Peter", "John", "Igor", "Sasha"];
 
-function checkLogin(array) {
-    let userName = prompt(`Us Name`);
-    if (array.includes(userName)) {
-        alert(`Welcome, ${userName}!`);
-    } else {
-        alert("User not found");
-    }
-}
+// function checkLogin(array) {
+//     let userName = prompt(`Us Name`);
+//     if (array.includes(userName)) {
+//         alert(`Welcome, ${userName}!`);
+//     } else {
+//         alert("User not found");
+//     }
+// }
 
-const logins = ["Peter", "John", "Igor", "Sasha"];
+// const logins = ["Peter", "John", "Igor", "Sasha"];
 
-console.log(checkLogin(logins));
+// console.log(checkLogin(logins));
 
 
 // task-3
@@ -63,25 +63,25 @@ console.log(checkLogin(logins));
 // аргументів і повертає їхнє середнє значення.
 // Додайте перевірку, що аргументи - це числа.
 
-function calculateAverage() {
-    if (arguments.length === 0) {
-        return `Введіть хоча б одне число.`;
-    }
+// function calculateAverage() {
+//     if (arguments.length === 0) {
+//         return `Введіть хоча б одне число.`;
+//     }
 
-    let sum = 0;
-    let count = 0;
+//     let sum = 0;
+//     let count = 0;
 
-    for (let i = 0; i < arguments.length; i++) {
-        if (typeof arguments[i] === 'number') {
-            sum += arguments[i];
-            count++;
-        }
-    }
+//     for (let i = 0; i < arguments.length; i++) {
+//         if (typeof arguments[i] === 'number') {
+//             sum += arguments[i];
+//             count++;
+//         }
+//     }
 
-    return count > 0 ? sum / count : `Має бути введене число`;
-}
+//     return count > 0 ? sum / count : `Має бути введене число`;
+// }
 
-console.log(calculateAverage(10, 30, 9, "hello", 50, 10));
+// console.log(calculateAverage(10, 30, 9, "hello", 50, 10));
 
 
 
